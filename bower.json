@@ -1,0 +1,20 @@
+{
+  "name": "tap-room",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "authors": [
+    "Inthrayuth Mahaphol <zign.int@gmail.com>"
+  ]
+}
