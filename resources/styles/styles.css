@@ -24,13 +24,14 @@ h1 {
 
 #each-keg-block {
   border-width: medium;
-  border-radius: 5px;
+  border-radius: 8px;
   border-style: outset;
-  border-color: red;
+  border-color: #D4A190;
   margin: 5px;
 }
 
 .sell-button {
   float: right;
   margin-bottom: 10px;
+  border-color: #D4A190;
 }
