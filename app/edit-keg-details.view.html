@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="keg-form">
+    <div class="row">
+      <div class="col-sm-5">
+        <h4>Edit keg name: </h4>
+        <input [(ngModel)]="keg.name" class="col-sm-10"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5">
+        <h4>Edit brewery: </h4>
+        <input [(ngModel)]="keg.brand" class="col-sm-10"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Edit price: </h4>
+        <input [(ngModel)]="keg.price" class="col-sm-9"/>
+      </div>
+
+      <div class="col-sm-2">
+        <h4>Edit ABV: </h4>
+        <input [(ngModel)]="keg.alcoholContent" class="col-sm-9"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Edit pint servings: </h4>
+        <input [(ngModel)]="keg.pintServings" class="col-sm-9"/>
+      </div>
+    </div>
+
+  </div>
+</div>
