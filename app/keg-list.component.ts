@@ -18,8 +18,7 @@ import { NewKegComponent } from './new-keg.component';
     </keg-display>
   </div>
 
-  <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">
-  </edit-keg-details>
+  <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg"></edit-keg-details>
 
   <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
   `

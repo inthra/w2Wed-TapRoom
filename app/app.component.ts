@@ -23,7 +23,9 @@ export class AppComponent {
     this.kegs = [
       new Keg("Stumptown Tart Cherry Saison", "BridgePort", 175, 7, 0),
       new Keg("Rise Up Red India Red Ale", "Hopworks", 180, 6.1, 1),
-      new Keg("Head Hunter", "Fat Head", 170, 7.5, 2)
+      new Keg("Head Hunter", "Fat Head", 170, 7.5, 2),
+      new Keg("Barrel 11", "Brewery 1", 120, 5.9, 3),
+      new Keg("Barrel 12", "Brewery 1", 120, 5.9, 4),
     ];
   }
   kegWasSelected(clickedKeg: Keg): void {
