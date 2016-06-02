@@ -10,11 +10,13 @@ import { NewKegComponent } from './new-keg.component';
   outputs: ['onKegSelect'],
   directives: [KegComponent, EditKegDetailsComponent, NewKegComponent],
   template: `
-  <keg-display *ngFor="#currentKeg of kegList"
-    (click)="kegSelected(currentKeg)"
-    [class.selected]="currentKeg === selectedKeg"
-    [keg]="currentKeg">
-  </keg-display>
+  <div class="row">
+    <keg-display *ngFor="#currentKeg of kegList"
+      (click)="kegSelected(currentKeg)"
+      [class.selected]="currentKeg === selectedKeg"
+      [keg]="currentKeg">
+    </keg-display>
+  </div>
 
   <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">
   </edit-keg-details>

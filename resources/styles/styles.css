@@ -1,5 +1,6 @@
 h1 {
   color: blue;
+  font-family: fantasy;
 }
 
 .selected {
@@ -20,4 +21,12 @@ h1 {
 
 .row {
   margin-bottom: 10px;
+}
+
+#each-keg-block {
+  border-width: medium;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: red;
+  margin: 10px;
 }
