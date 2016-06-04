@@ -9,13 +9,13 @@ export class LowPipe implements PipeTransform {
   transform(input: Keg[], args) {
     var servingLevel = args[0];
 
-    if(servingLevel === 124 || servingLevel > 10) {
+    if(servingLevel === "high") {
       return input.filter((keg) => {
-        return true;
+        return keg.pintServings >= 10;
       });
-    } else if (servingLevel < 10) {
+    } else if (servingLevel === "low") {
       return input.filter((keg) => {
-        return false;
+        return keg.pintServings < 10;
       });
     } else {
       return input;

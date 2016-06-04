@@ -1,7 +1,5 @@
-
 export class Keg {
-  public pintServings: number = 124;
-  constructor(public name: string, public brand: string, public price: number, public alcoholContent: number, public id: number) {
+  constructor(public name: string, public brand: string, public price: number, public alcoholContent: number, public pintServings: number, public id: number) {
 
   }
 }

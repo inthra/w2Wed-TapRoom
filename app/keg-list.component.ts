@@ -14,7 +14,6 @@ import { LowPipe } from './low.pipe';
   template: `
   <select (change)="onChange($event.target.value)">
     <option value="all" selected="selected">Show All Kegs</option>
-    <option value="full">Show Full Level Kegs</option>
     <option value="high">Show High Level Kegs</option>
     <option value="low">Show Low Level Kegs</option>
   </select>
@@ -27,9 +26,9 @@ import { LowPipe } from './low.pipe';
     </keg-display>
   </div>
 
-  <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg"></edit-keg-details>
-
   <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
+
+  <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg"></edit-keg-details>
   `
 })
 export class KegListComponent {
@@ -47,7 +46,7 @@ export class KegListComponent {
   }
   createKeg(name: string): void {
     this.kegList.push(
-      new Keg(name, "Brewery", 110, 5, this.kegList.length)
+      new Keg(name, "Brewery", undefined, undefined, undefined, this.kegList.length)
     );
   }
   onChange(filterOption) {

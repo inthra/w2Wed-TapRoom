@@ -11,7 +11,7 @@ import { SellOnePintComponent } from './sell-one-pint.component';
     <h4>{{ keg.name }}</h4>
     <ul>
       <li>{{ "Brand: " + keg.brand }}</li>
-      <li>{{ "Price: $" + keg.price + " per keg"}}</li>
+      <li>{{ "Price: $" + keg.price + " per pint"}}</li>
       <li>{{ "ABV: " + keg.alcoholContent + "%" }}</li>
       <li>{{ "Pint servings: " + keg.pintServings}}
         <sell-one-pint [targetKeg]="keg"></sell-one-pint>
